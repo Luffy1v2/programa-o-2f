@@ -75,6 +75,21 @@ for (let i=0; i<contadores.length;i++){
     return [dias,horas,minutos,segundos]
     else {
     return [0,0,0,0];
+    document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
+document.getElementById("seg2").textContent = calculaTempo(tempos[2])[3];
+document.getElementById("seg3").textContent = calculaTempo(tempos[3])[3];
+for (let i=0; i < tempos.length; i++){
+    document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
+    for (let i=0; i<contadores.length;i++){
+        document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
+        document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+        document.getElementById("min"+i).textContent = calculaTempo(tempos[i])[2];
+        document.getElementById("seg"+i).textContent = calculaTempo(tempos[i])[3];
+    }
+
+
+
                                                         
                                                         
                                                     
